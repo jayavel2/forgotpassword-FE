@@ -1,6 +1,6 @@
-import react from "react";
-import { useState, useContext, useParams } from 'react';
-import UserContext from './UserContext'
+
+import useState from 'react';
+
 
 export default function Forgotpassword(props) {
     let [password, setpassword] = useState('')
@@ -9,7 +9,7 @@ export default function Forgotpassword(props) {
     console.log(props.match.params.token)
     let UserSubmit = async (e) => {
         e.preventDefault()
-        let data = await fetch("https://forgotpasswordlink.herokuapp.com/auth/newpassword", {
+         await fetch("https://forgotpasswordlink.herokuapp.com/auth/newpassword", {
             method: "POST",
             body: JSON.stringify({
                 password, token

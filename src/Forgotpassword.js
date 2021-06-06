@@ -1,11 +1,11 @@
-import react from "react";
+
 import { useState, useContext } from 'react';
 import UserContext from './UserContext'
 
 export default function Forgotpassword() {
-    let userdata = useContext(UserContext);
+  
     let [email, setemail] = useState('')
-    let [show, setshow] = useState(true);
+  
 
     let UserSubmit = async (e) => {
         e.preventDefault()
@@ -26,7 +26,7 @@ export default function Forgotpassword() {
             console.log(message)
             let mesg = JSON.stringify(message)
             alert(mesg)
-            setshow(true)
+           
 
 
         }).catch(err => {

@@ -8,7 +8,7 @@ import {
 import { UserProvider } from './UserContext'
 import Forgotpassword from './Forgotpassword';
 import Resetpassword from './Resetpassword'
-import Demo from './Demo';
+import Demo from './demo';
 function App() {
 
 return <>

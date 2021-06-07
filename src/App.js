@@ -18,7 +18,7 @@ return <>
       <UserProvider>
       <Switch>
         <Route path ="/" component={Forgotpassword} exact={true}></Route>
-        <Route path ="/resetpassword" component={Resetpassword} exact={true}></Route>
+        <Route path ="/resetpassword/:id" component={Resetpassword} exact={true}></Route>
         <Route exact path="/demo" component={Demo}></Route>
       </Switch>
       </UserProvider>

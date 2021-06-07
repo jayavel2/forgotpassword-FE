@@ -8,7 +8,7 @@ import {
 import { UserProvider } from './UserContext'
 import Forgotpassword from './Forgotpassword';
 import Resetpassword from './Resetpassword'
-
+import Demo from './Demo';
 function App() {
 
 return <>
@@ -18,6 +18,7 @@ return <>
       <Switch>
         <Route path ="/" component={Forgotpassword} exact={true}></Route>
         <Route path ="/resetpassword" component={Resetpassword} exact={true}></Route>
+        <Route path="/demo" component={Demo} exact={true}></Route>
       </Switch>
       </UserProvider>
       

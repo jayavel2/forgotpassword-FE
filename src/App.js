@@ -13,6 +13,7 @@ function App() {
 
 return <>
 <Router>
+  <Demo>
     <div id="wrapper">
       <UserProvider>
       <Switch>
